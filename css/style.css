@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 400 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 8%);
+}
+
+.container {
+    background-color: hsl(0, 0%, 12%);
+    width: 215px;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 120px auto;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .container {
+        width: calc(100% - 125px);
+    }
+}
+
+.container .person-desc img {
+    width: 100%;
+    border-radius: 50%;
+    width: 60px;
+}
+
+.container .person-desc h3 {
+    color: white;
+    margin-top: 17px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.container .person-desc address {
+    color: hsl(75deg 94% 57% / 80%);
+    font-style: normal;
+    margin-top: 8px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.container .person-desc span {
+    display: block;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #dbdada;
+}
+
+
+.container .social {}
+
+.container .social ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.container .social ul li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.container .social ul li a {
+    background-color: hsl(0, 0%, 20%);
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 10px 0px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.container .social ul li a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
