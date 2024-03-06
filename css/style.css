@@ -28,6 +28,7 @@ body {
 @media (max-width: 550px) {
     .container {
         width: calc(100% - 125px);
+        margin: 100px auto;
     }
 }
 
@@ -38,7 +39,7 @@ body {
 }
 
 .container .person-desc h3 {
-    color: white;
+    color: #dbdada;
     margin-top: 17px;
     font-size: 17px;
     font-weight: 500;
@@ -74,7 +75,7 @@ body {
 .container .social ul li a {
     background-color: hsl(0, 0%, 20%);
     text-decoration: none;
-    color: white;
+    color: #dbdada;
     width: 100%;
     padding: 10px 0px;
     display: inline-block;
@@ -82,9 +83,37 @@ body {
     font-size: 10px;
     font-weight: 600;
     transition: .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.container .social ul li a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: hsl(75, 94%, 57%);
+    transition: .5s;
+    z-index: -1;
+}
+
+.container .social ul li a:hover::before {
+    width: 100%;
 }
 
 .container .social ul li a:hover {
-    background-color: hsl(75, 94%, 57%);
-    color: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 20%);
+
+}
+
+footer {
+    color: #dbdada;
+}
+
+footer a {
+    text-decoration: none;
 }
